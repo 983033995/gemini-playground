@@ -1,5 +1,4 @@
 import * as THREE from "three";
-import "./style.css";
 import { CameraRig } from "./world/CameraRig.js";
 import { Interaction } from "./world/Interaction.js";
 import { createSceneCluster, themes } from "./world/createSceneCluster.js";
