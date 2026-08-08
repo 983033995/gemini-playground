@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#e9d9c8" />
+    <meta name="description" content="A scroll-driven paper diorama about a cute girl's journey across America." />
+    <title>Mia's Tiny America Trip</title>
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="scene" aria-label="小女孩环游美国的 3D 纸艺旅行世界"></canvas>
+      <div class="paper-noise" aria-hidden="true"></div>
+
+      <div id="loader" class="loader">
+        <div class="loader__postcard">
+          <span class="loader__stamp">USA · 2026</span>
+          <p class="loader__mini">MIA'S TINY TRAVEL BOOK</p>
+          <h1>小小旅行家<br/>环游美国</h1>
+          <p class="loader__copy">装进行李箱：相机、贴纸、红色运动鞋，还有一点点勇气。</p>
+          <div class="loader__track"><i></i></div>
+        </div>
+      </div>
+
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="回到旅程开头">
+          <span class="brand__icon">✦</span>
+          <span class="brand__text"><strong>Mia's Tiny Trip</strong><small>USA PAPER JOURNEY</small></span>
+        </a>
+        <div class="scroll-hint"><span>SCROLL</span><i></i><span>TRAVEL</span></div>
+      </header>
+
+      <aside class="scene-nav" aria-label="旅行章节导航">
+        <button data-progress="0.03" class="scene-nav__item is-active"><span>01</span><b>SF</b></button>
+        <button data-progress="0.34" class="scene-nav__item"><span>02</span><b>66</b></button>
+        <button data-progress="0.65" class="scene-nav__item"><span>03</span><b>NYC</b></button>
+        <button data-progress="0.95" class="scene-nav__item"><span>04</span><b>HI</b></button>
+      </aside>
+
+      <section class="story-ui" aria-live="polite">
+        <div class="story-ui__badge" id="sceneBadge">SAN FRANCISCO</div>
+        <h2 id="sceneTitle">雾里的第一站</h2>
+        <p id="sceneCopy">米娅背上小相机，从红色大桥和叮叮当当的缆车开始她的美国旅行。</p>
+        <div class="story-ui__chips" id="sceneChips">
+          <span>Golden Gate</span><span>Cable Car</span><span>Camera</span>
+        </div>
+      </section>
+
+      <div class="passport">
+        <span class="passport__label">TRAVEL PASSPORT</span>
+        <div class="passport__route">
+          <i class="passport__line"></i>
+          <i id="passportProgress" class="passport__progress"></i>
+          <button data-progress="0.03" class="passport__stop is-active" aria-label="旧金山"><span>SF</span></button>
+          <button data-progress="0.34" class="passport__stop" aria-label="66号公路"><span>66</span></button>
+          <button data-progress="0.65" class="passport__stop" aria-label="纽约"><span>NY</span></button>
+          <button data-progress="0.95" class="passport__stop" aria-label="夏威夷"><span>HI</span></button>
+        </div>
+        <strong id="progressText">0%</strong>
+      </div>
+
+      <div id="cursorSticker" class="cursor-sticker">✈︎</div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

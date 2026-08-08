@@ -1,16 +1,17 @@
 {
-  "name": "gemini-playground",
-  "version": "0.0.0",
+  "name": "usa-girl-paper-journey",
   "private": true,
+  "version": "1.0.0",
+  "type": "module",
   "scripts": {
-    "deploy": "wrangler deploy",
-    "dev": "wrangler dev",
-    "start": "wrangler dev",
-    "test": "vitest"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "three": "0.179.0"
   },
   "devDependencies": {
-    "@cloudflare/vitest-pool-workers": "^0.5.2",
-    "wrangler": "^3.60.3",
-    "vitest": "2.1.8"
+    "vite": "7.0.0"
   }
 }
