@@ -1,0 +1,33 @@
+{
+  "project": "Mia Across America V4",
+  "status": "asset-direction locked; production queue initialized",
+  "reference_only": true,
+  "priority": [
+    "Batch A — Mia Identity Lock",
+    "Batch B — Key Poses",
+    "Batch C — Oil Motion",
+    "Batch D — NYC World",
+    "NYC SHOT 01–08 Integration"
+  ],
+  "runtime": {
+    "world": "Three.js persistent scene",
+    "scroll": "native scrollY exact state + smoothed cinematic state",
+    "character_motion": "Oil Motion semantic clips",
+    "foreground": "transparent PNG/WebP near-camera cutouts",
+    "long_opaque_motion": "all-I-frame MP4 when appropriate"
+  },
+  "reference_crops": [
+    "01-character-turnaround-reference.png",
+    "02-key-pose-library-reference.png",
+    "03-outfit-props-reference.png",
+    "04-walk-side-reference.png",
+    "05-walk-back-reference.png",
+    "06-vehicles-reference.png",
+    "07-nyc-layers-reference.png",
+    "08-subway-reference.png",
+    "09-times-square-reference.png",
+    "10-props-signage-reference.png",
+    "11-ui-reference.png",
+    "12-particles-reference.png"
+  ]
+}
